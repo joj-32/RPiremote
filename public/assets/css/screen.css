@@ -1,0 +1,15 @@
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+  .card_remoteControl {
+    width: 90% !important;
+  }
+  .remote_body {
+    min-height: 100vh !important;
+  }
+}
+/* PC */
+@media screen and (min-width: 1024px) {
+  .remote_body {
+    min-height: 150vh;
+  }
+}

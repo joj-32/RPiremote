@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.card {
+    border: 1px solid transparent;
+    margin-top: 30px !important;
+}
+
+.modal {
+    background-color: white;
+}
+
+.modal-content {
+    border: 1px solid transparent !important;
+}
+
+.modal-footer {
+    border-top: 1px solid transparent !important;
+    justify-content: center !important;
+}
+
+
+.card_new_remote {
+    background-color: transparent !important;
+}
+
+.small {
+    font-size: 1.5em;
+    width: 4em; 
+    height: 4em; 
+}
+
+.large {
+    font-size: 2em;
+    width: 5em; 
+    height: 5em; 
+}
+
+.circle {
+   border-radius: 100%; 
+}
+
+.rectangle {
+    border-radius: 10px;
+    height: 2.5em !important;
+}
+
+.card_remoteControl {
+    background-color: transparent !important;
+}
+
+.button_card_home {
+    font-size: 1em; 
+}

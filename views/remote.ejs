@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        <%= remote %>
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/css/styleHome.css">
+    <link rel="stylesheet" href="/assets/css/screen.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="bg-dark remote_body">
+    <div class="card card_remoteControl"
+        style="position: absolute; top: 30px; left: 50%; transform: translateX(-50%) translateY(0%);">
+        <div class="row gy-3" align="center">
+            <% array.forEach(element=> { %>
+                <% var col=12 / element.row %>
+                    <form action="/remote/<%= remote %>" method="POST" class="col-<%= col %> mt-5"
+                        style="display: flex; align-items: center; justify-content: center;">
+                        <input type="hidden" name="command" value="<%= element.command %>">
+                        <input class="btn <%= element.shape %> <%= element.dimension %>" type="submit"
+                            value="<%= element.text %>" style=" background-color: <%= element.color %>;">
+                    </form>
+                    <% }) %>
+        </div>
+    </div>
+    <a class="btn btn-secondary fixed-bottom" href="/" style="font-size: 4em;"><i class="bi bi-house"></i></a>
+</body>
+
+</html>
+
+
+
+<!-- 
+    
+
+ -->
