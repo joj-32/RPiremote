@@ -23,7 +23,7 @@ Note that all this steps must be done on a RPi with the appropriate hardware mou
 
 after downloading the repository files and extracting them you must first install the npm dependencies:
 
-    cd RPiremote-master
+    cd RPiremote-main
     npm i
 
 After this you need to download and configure LIRC, in case it has already been done you can skip this step and proceed to [register a new remote](#Add%20remote).
