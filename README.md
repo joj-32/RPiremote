@@ -76,7 +76,7 @@ Then reboot the RPi:
 # Add new remotes
 
 Since RPiremote does not yet implement the possibility of registering new remote controls directly from the app, and automatically, it is necessary to perform a somewhat triky procedure.
-This lack is mainly due to LIRC, which, not being updated since 2017, encounters serious problems in using the **irrecord** command. While some tutorials on how to patch LIRC can be found on the web, such as [this one](https://gist.github.com/billpatrianakos/cb72e984d4730043fe79cbe5fc8f7941), none of them solve the ** irrecord ** issue.
+This lack is mainly due to LIRC, which, not being updated since 2017, encounters serious problems in using the **irrecord** command. While some tutorials on how to patch LIRC can be found on the web, such as [this one](https://gist.github.com/billpatrianakos/cb72e984d4730043fe79cbe5fc8f7941), none of them solve the **irrecord** issue.
 
 ## Add to LIRC files
 To add a remote control file that can be used by LIRC is usually used the **irrecord** command, however, since it does not work out of the box, an alternative must be used.
